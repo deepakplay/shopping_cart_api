@@ -1,6 +1,6 @@
 /*
-     Project    : PlayBox  HTML, CSS, Javascript
-     Description: This library helps to displays images and videos by filling the screen, and dimming out the web page
+     Project    : Shopping Cart API Project
+     Description: This site is a model of a Shopping Cart function in a website and utilizes JavaScript/jQuery AJAX for API requests.
      Created by : K. Deepak Kumar
      Contact at : deepakplay14@gmail.com
 */
