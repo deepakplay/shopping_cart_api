@@ -1,0 +1,97 @@
+<!--
+     Project    : Shopping Cart API Project
+     Description: This site is a model of a Shopping Cart function in a website and utilizes JavaScript/jQuery AJAX for API requests.
+     Created by : K. Deepak Kumar
+     Contact at : deepakplay14@gmail.com
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Shopping Cart - Demo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"></noscript>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-H6PDZ8R2J1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-H6PDZ8R2J1');
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <span class="mobile_menu fas fa-bars"></span>
+            <ul>
+                <li><a href="" ><i class="fas fa-home"></i>&nbsp;Home</a></li>
+                <li><a href="" class="cartBox-open" ><span class="cart"><i class="fas fa-shopping-cart"></i>&nbsp;Cart<span class='cart_count'></span></span></a></li>
+                <li><a href="" class="about-open"><i class="fas fa-info-circle"></i>&nbsp;About</a></li>
+                <li><a href="" class="login" ><i class="fas fa-sign-in-alt"></i>&nbsp;Logout</a></li>
+                <li><span class="menu_close">&times;</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- PlayBox Container -->
+        <div class="playbox cartBox">
+            <div class="container">
+                <h1>My Cart</h1>
+                <table class='cart_table'>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+                <div class="checkout">
+                    <span class="total_amount">
+                        <span>Total : </span>
+                        <span class="amount"><span>0</span> Rs</span>
+                    </span>
+                    <button class="checkout_btn"><i class="fas fa-shopping-cart"></i>&nbsp;Checkout</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="playbox about">
+            <div class="container">
+                <h1>About</h1>
+                <h3>Languages Used :</h3>
+                <p>This application is model of Shopping Cart, and this application is built by HTML/CSS, Javascirpt and jquery.</p>
+                <br>
+                <h3>How it's work :</h3>
+                <p>And Build with the jQuery AJAX for fetching the items from the API, and uses LocalStrorage for saving the state of the application</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Search Input -->
+            <a href="http://forkify-api.herokuapp.com/phrases.html" target="_blank">** Click here to See available Items **</a>
+            <div class="search">
+                <input type="text" id="itemSearch" placeholder="pizza, apple, pineapple, etc...">
+                <button id="itemSearchButton">Search</button>
+            </div>
+            <!-- Item List -->
+            <div class="searchResult">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/playbox.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
