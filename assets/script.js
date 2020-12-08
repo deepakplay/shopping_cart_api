@@ -264,8 +264,8 @@ $(document).ready(function(){
     updateTotal();
      
     // PlayBox Button Target Setup
-    PlayBox('.cartBox-open','.cartBox');
-    PlayBox('.about-open','.about');
+    PlayBox.open('.cartBox-open','.cartBox');
+    PlayBox.open('.about-open','.about');
     
     // Responsive Navigation bar
     $('.mobile_menu').click(function(){ // Open Menu in mobile view
